@@ -6,6 +6,7 @@ export default function home() {
 
     let top = document.createElement('div');
     top.classList.add('top');
+    top.textContent = "Todo list";
     wrapper.append(top);
 
     let main = document.createElement('div');
@@ -15,6 +16,15 @@ export default function home() {
     let leftColumn = document.createElement('div');
     leftColumn.classList.add('left-column');
     main.append(leftColumn);
+
+    let addProject = document.createElement('div');
+    addProject.classList.add('add-project-btn');
+    addProject.textContent = "Add project";
+    addProject.id="addProject";
+    // addProject.addEventListener("click", (e) => {
+    //     addProject();
+    // })
+    leftColumn.append(addProject);
 
     let rightColumn = document.createElement('div');
     rightColumn.classList.add('right-column');

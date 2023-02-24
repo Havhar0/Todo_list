@@ -7,7 +7,15 @@ body {
 }
 .top{
     height: 15vh;
-    background-color: 1f262e;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(35, 35, 35);
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 .main{
     height: 85vh;
@@ -17,13 +25,33 @@ body {
 .left-column{
     height: 85vh;
     width: 25%;
+    min-width: 250px;
+    padding-top: 40px;
     display: flex;
-    background-color: rgb(90, 172, 195);
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: rgb(219, 219, 219);
+}
+.add-project-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 212, 140);
+    color: white;
+    font-family: sans-serif;
+}
+.add-project-btn:hover{
+    background-color: rgb(26, 220, 149);
+    cursor: pointer;
 }
 .right-column{
     height: 85vh;
     width: 75%;
     display: flex;
-    background-color: rgb(211, 43, 161);
+    background-color: rgb(239, 239, 239);
 }
 
