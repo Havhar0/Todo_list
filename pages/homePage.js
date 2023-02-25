@@ -1,3 +1,7 @@
+
+import newProject from "../src/functions/addProject.js";
+
+
 export default function home() {
 
     let wrapper = document.createElement('div');
@@ -20,10 +24,10 @@ export default function home() {
     let addProject = document.createElement('div');
     addProject.classList.add('add-project-btn');
     addProject.textContent = "Add project";
-    addProject.id="addProject";
-    // addProject.addEventListener("click", (e) => {
-    //     addProject();
-    // })
+    addProject.id = "addProject";
+    addProject.addEventListener("click", (e) => {
+        newProject();
+    })
     leftColumn.append(addProject);
 
     let rightColumn = document.createElement('div');

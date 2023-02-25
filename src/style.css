@@ -23,7 +23,7 @@ body {
     background-color: blanchedalmond;
 }
 .left-column{
-    height: 85vh;
+    height: auto;
     width: 25%;
     min-width: 250px;
     padding-top: 40px;
@@ -48,8 +48,19 @@ body {
     background-color: rgb(26, 220, 149);
     cursor: pointer;
 }
+.new-project-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 94, 15);
+    color: white;
+    font-family: sans-serif;
+}
 .right-column{
-    height: 85vh;
+    height: auto;
     width: 75%;
     display: flex;
     background-color: rgb(239, 239, 239);
