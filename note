@@ -1,0 +1,13 @@
+Add project
+    - Ask for project name and assign
+
+Click on project name
+    - Clear right column
+    - loop through array and display tasks
+
+    + Click on "Add task btn"
+    - display pop up form
+        • get name
+        • task priority
+        • finished or unfinished
+    

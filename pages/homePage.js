@@ -1,5 +1,6 @@
 
 import newProject from "../src/functions/addProject.js";
+import clear from "../src/functions/clearPage.js";
 
 
 export default function home() {
@@ -26,6 +27,7 @@ export default function home() {
     addProject.textContent = "Add project";
     addProject.id = "addProject";
     addProject.addEventListener("click", (e) => {
+        clear();
         newProject();
     })
     leftColumn.append(addProject);
